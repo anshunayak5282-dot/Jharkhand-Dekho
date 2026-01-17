@@ -74,3 +74,14 @@ a:active{
 .label-text{
     padding-left: 10px;
 }
+@media (max-width:390px){
+    #box{
+        width: 320px;
+        margin-right: 50px;
+    }
+    h1{
+        font-size: 25px;
+        margin-right: 35px;
+    }
+  
+}
