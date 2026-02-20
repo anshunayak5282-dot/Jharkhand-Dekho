@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+          
+         <div class="booking-container">
+            <div class="container-2">
+                <h2>How We Work</h2>
+                <div class="content">
+                    <div class="first-content">
+                        <i class="fa-regular fa-image"></i>
+                        <p>Select your tour</p>
+                        
+                    </div>
+                    <div class="first-content">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>Get Multiple Free Quotes</p>
+                        
+                    </div>
+                    <div class="first-content">
+                        <i class="fa-solid fa-mobile"></i>
+                        <p>Customize & Book</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container-1">
+            <h2>Conform Your Booking</h2>
+            <form action="./conform_booking.php" method="post">
+                     <label>Name</label>
+                     <input type="text" name="name" placeholder="Enter Your Name">
+
+                     <label>Persons</label>
+                     <input type="number" name="Persons" placeholder="Enter Number of Persons">
+
+                      <label>Select Date</label>
+                     <input type="date" name="Date" placeholder="enter date">
+
+                     <label>Email</label>
+                     <input type="email" name="email" placeholder="Enter Your Email">
+
+                     <label>Mobile</label>
+                     <input type="tel" name="mobile" placeholder="Enter Your Mobile" required>
+                     
+                     <button id="book-btn" type="submit">Book Now</button>
+            </form>
+            </div>
+         </div>
+</body>
+</html>

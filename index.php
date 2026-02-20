@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +21,21 @@
          </div>
       <div class="icons">
          <ul>
-           <a href="index.html"> <li>Home</li></a>
+           <a href="index.php"> <li>Home</li></a>
             <a href=""><li>Search</li></a>
             <li>Blog</li>
-            <a href="/sign_up.html"><li>Sign in</li></a>
-            <a href="/booking.html"><li>Booking</li></a>
+            <a href="booking.html"><li>Booking</li></a>
+            <?php if(isset($_SESSION['user']))
+            { ?>
+              <!-- <li>Welcome <?php echo $_SESSION['user'];?></li>   all php new line -->
+
+            <a href="logout.php"><li>Logout</li></a>
+            <?php } else { ?>
+                       <a href="login.html"><li>Log-in</li></a>
+
+            <!-- <a href="booking.html"><li>Booking</li></a> -->
+            <?php } ?>
+            
          </ul>
       </div>
       <div class="menu-btn">
@@ -62,12 +75,15 @@
 
          
                    <div class="card-container">
+            
                      <div class="place-had">
                         <h1>Popular Tour Package's</h1>
                         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem inventore assumenda doloremque praesentium ipsa! Aliquid porro est, officiis iste aliquam nemo eos possimus eaque commodi. Hic vitae recusandae repellendus. Reprehenderit!</p>-->
                      </div>
-                  <div class="card-item">
+                  <div href="" class="card-item">
+                     
                      <div class="card">
+                        <!-- <a href="booking.html"> -->
                         <div class="card-img">
                            <img src="https://www.godigit.com/content/dam/godigit/directportal/en/chhinnamasta-temple.jpg" alt="">
                         </div>
@@ -76,7 +92,7 @@
                               <h2>Temples</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p>Startin at-$8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -85,11 +101,13 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <a href="booking.html"><button>View More</button></a>
                            </div>
                         </div>
-                  </div>  
+                        
+                  </div>
                    <div class="card">
+                     
                         <div class="card-img">
                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCd7dvJ-QUiB3CZCFfa2Q-iPhWyES9KyWwMw&s" alt="">
                         </div>
@@ -98,7 +116,7 @@
                               <h2>Falls</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p>Startin at-$8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -107,7 +125,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <a href="booking.html"><button>View More</button></a>
                            </div>
                         </div>
                   </div>
@@ -120,7 +138,7 @@
                               <h2>Hill Station</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p>Startin at-$8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -129,7 +147,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <a href="booking.html"><button>View More</button></a>
                            </div>
                         </div>
                   </div>
@@ -142,7 +160,7 @@
                               <h2>Forest</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p>Startin at-$8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -151,7 +169,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                             <a href="booking.html"><button>View More</button></a>
                            </div>
                         </div>
                   </div>
@@ -164,7 +182,7 @@
                               <h2>Zoo</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p>Startin at-$8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -173,7 +191,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                             <a href="booking.html"><button>View More</button></a>
                            </div>
                         </div>
                   </div>
@@ -186,7 +204,7 @@
                               <h2>Dams</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p>Startin at-$8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -195,7 +213,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <a href="booking.html"><button>View More</button></a>
                            </div>
                         </div>
                   </div>
@@ -208,7 +226,7 @@
                               <h2>City</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p>Startin at-$8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -217,7 +235,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <a href="booking.html"><button>View More</button></a>
                            </div>
                         </div>
                   </div>
@@ -230,7 +248,7 @@
                               <h2>Tracking</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p>Startin at-$8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -239,11 +257,13 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <a href="booking.html"><button>View More</button></a>
                            </div>
                         </div>
                   </div>
                </div>  
+               </a>
+               
                 </div>
 
                    <!-- hiiii -->
@@ -271,7 +291,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <button>View more</button>
                            </div>
                         </div>
                   </div>  
@@ -293,7 +313,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <button>View more</button>
                            </div>
                         </div>
                   </div>
@@ -316,7 +336,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <button>View More</button>
                            </div>
                         </div>
                   </div>
@@ -338,7 +358,7 @@
                               </div>
                            </div>
                            <div class="button">
-                              <button>click</button>
+                              <button>View More</button>
                            </div>
                         </div>
                   </div>
@@ -367,19 +387,19 @@
                            <div class="footer-item-column">
                               <h2 class="service-heading-2">About</h2>
                               <ul class="service-links">
-                                 <li><a href="#">About Jharkhand dekho.com</a></li>
-                                 <li><a href="#">News</a></li>
-                                 <li><a href="#">About Jharkhand Dekho.com Group</a></li>
+                                 <li>About Jharkhand dekho.com</li>
+                                 <li>News</li>
+                                 <li>About Jharkhand Dekho.com Group</li>
                               </ul>
                            </div>
                            <div class="footer-item-column">
                               <h2 class="service-heading-3">Other Service</h2>
                               <ul class="service-links">
-                                 <li><a href="#">Investor Relationship</a></li>
-                                 <li><a href="#">Jharkhand Dekho.com Reward</a></li>
+                                 <li>Investor Relationship</li>
+                                 <li>Jharkhand Dekho.com Reward</li>
                                  
-                                 <li><a href="#">All Hotels</a></li>
-                                 <li><a href="#">Security</a></li>
+                                 <li>All Hotels</li>
+                                 <li>Security</li>
                               </ul>
                            </div>
                         </div>

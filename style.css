@@ -147,6 +147,11 @@ ul li:hover{
      background-color: rgb(243, 243, 243);
      
 }
+.card a{
+    text-decoration: none;
+    color: inherit;
+    
+}
 .place-had{
     max-width: 80%;
     margin: 0 auto;
@@ -165,6 +170,7 @@ ul li:hover{
       max-width: 80%;
       margin: 0 auto;
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       padding-top: 2rem;
       
@@ -215,9 +221,13 @@ ul li:hover{
     width: fit-content;
     padding: 0.5rem 1.5rem;
     /* #4caf50; hover-45a046 */
-    background-color: rgb(166, 233, 248) ;
+    background-color: rgb(48, 198, 232) ;
     border-radius: 10px;
     border: none;
+    color:rgb(255, 255, 255) ;
+}
+.action{
+    text-decoration: none;
 }
 .rating{
     padding-top:7px ;
@@ -225,10 +235,10 @@ ul li:hover{
 }
 .card button:hover{
     background-color: #2dbae1;
+    cursor: pointer;
 }
 .card:hover{
     transform: scale(1.01);
-    cursor: pointer;
 }
 .menu-btn{
     display: none;
@@ -316,20 +326,20 @@ a{
       font-size: 100px;
       
 }
+.service-links li{
+    text-decoration: none;
+}
 .service-heading{
      color: rgb(26, 77, 25);
      text-decoration: underline;
-}
-.service-links li a{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    font-size: 15px;
 }
 .service-links li{
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
     font-size: 15px;
+    text-decoration: none;
 }
+
 footer{
     height: auto;
     width: 100%;

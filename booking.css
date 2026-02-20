@@ -160,6 +160,11 @@ ul li:hover{
 }
 .card button:hover{
     background-color: #2dbae1;
+    cursor: pointer;
+}
+.button:hover{
+    cursor: pointer;
+
 }
 .heading h2{
     padding-top: 15px;

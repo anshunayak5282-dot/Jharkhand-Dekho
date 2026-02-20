@@ -1,16 +1,47 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+       <link rel="stylesheet" href="booking.css">
 
-   <link rel="stylesheet" href="booking.css">
    <title>Document</title>
 </head>
 <body>
-    <header>
-   <!-- top section of web page-->
+         <div class="navbar">
+        <div class="logo">
+         <img src="Jhar_dekho.jpg" alt="" width="80">
+         <h1>Jharkhand Dekho</h1>
+         </div>
+      <div class="icons">
+         <ul>
+           <a href="index.php"> <li>Home</li></a>
+            <a href=""><li>Search</li></a>
+            <li>Blog</li>
+            <a href="booking.html"><li>Booking</li></a>
+            <?php if(isset($_SESSION['user']))
+            { ?>
+              <!-- <li>Welcome <?php echo $_SESSION['user'];?></li>   all php new line -->
+
+            <a href="logout.php"><li>Logout</li></a>
+            <?php } else { ?>
+                       <a href="login.html"><li>Log-in</li></a>
+
+            <!-- <a href="booking.html"><li>Booking</li></a> -->
+            <?php } ?>
+            
+         </ul>
+      </div>
+      <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+            
+         </div>
+   </div>
+   <!-- top section of web page
    <div class="navbar">
         <div class="logo">
          <img src="Jhar_dekho.jpg" alt="" width="80">
@@ -29,7 +60,7 @@
             <i class="fa-solid fa-bars"></i>
             
          </div>
-   </div>
+   </div> -->
 
                     <div class="card-container">
                      <div class="place-had">
@@ -57,10 +88,16 @@
                               <p>5000</p>
                              </div>
                            <div class="button">
-                              <button>Book</button>
+                              <a href="form.html"><button>Book</button></a>
                            </div>
                         </div>
                   </div>  
+                  </div>
+
+                  <div class="review-container">
+                     <div class="review-box">
+                            
+                     </div>
                   </div>
                    
                   
