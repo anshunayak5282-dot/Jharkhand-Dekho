@@ -175,7 +175,7 @@ session_start();
                   </div>
                   <div class="card">
                         <div class="card-img">
-                           <img src="https://www.dalmawildlife.in/ranchi/images/gallery/5.jpg" alt="">
+                           <img src="https://bigcatsindia.com/wp-content/uploads/2018/06/Royal-Bengal-Tiger.jpg" alt="">
                         </div>
                         <div class="card-content">
                            <div class="heading">
@@ -377,9 +377,15 @@ session_start();
                                  <li><a href="#">Email-jharkhand_dekho@gmail.com</a></li> -->
                                  <li>We work pro-actively to provide an <br> incredible experience in every single trip <br> we create, so you can have memories <br> worth taking home.</li>
                                  <div class="social-media">
-                                    <i  class="fa-brands fa-instagram"><a href=""></a></i>
-                                    <i class="fa-brands fa-youtube"></i>
+                                    <a href="https://www.instagram.com/ll_.mr_anshu_ll/?__pwa=1" target="_blank">
+                                    <i  class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    
+                                    <a href="https://www.linkedin.com/in/anshuman-nayak-a47384370/" target="_blank">
                                     <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+
+                                    <i class="fa-brands fa-youtube"></i>
                                  </div>
                                  <!-- <li><a href="#">home</a></li> -->
                               </ul>
