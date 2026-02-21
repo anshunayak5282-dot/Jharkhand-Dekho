@@ -95,37 +95,45 @@ ul li:hover{
     color: #fff;
     font-size: 1.5rem;
 }
-.date-time-section{
+/* .date-time-section{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     padding-left: 38%;  
     margin-top: 50px;  
-}
-.date-time-section input{   
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 100px;
-    border-radius: 5px;
-    border: none;
-    
-}
+} */
 .all-item{
     padding-top: 230px;
 }
 
 .find-button button{
-    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 150px;
+    /* padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 20px; */
     background-color: rgb(253, 99, 43);
     border-radius: 8px;
     cursor: pointer;
     border: none;
     color: white;
+}
+.find-button{
+    height: auto;
+    width:  auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    /* padding-left: 120px; */
 }
 .find-button button:hover{
     background-color: #3a8bdc;
@@ -356,6 +364,7 @@ footer hr{
 }
 .page-rights{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -363,6 +372,7 @@ footer hr{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 
 @media (max-width:900px){
     .icons{
@@ -385,25 +395,13 @@ footer hr{
     .text p{
         font-size: 1rem;
     }
-     /* .date-time-section{
-        flex-direction: column;
-       padding-bottom: 20px;
-       margin-bottom: 100px;
-     } */
      .footer-items{
         flex-direction: column;
         
      }
 }
-@media (max-width:1155px){
-        .date-time-section{
-            flex-direction: column;
-            
-        }
-        .date-time-section input{
-            height: 10px;
-        }
-}
+
+
 
 
 

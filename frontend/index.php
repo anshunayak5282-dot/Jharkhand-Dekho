@@ -54,10 +54,10 @@ session_start();
                          </div>
                </div>
             <div class="date-time-section">
-                           <div class="destination">
+                           <!-- <div class="destination">
                               <input type="text"placeholder="Destination">
                               
-                           </div>
+                           </div> -->
                            
                            <!-- <div class="time-date">
                               <input type="date" placeholder="Date">
