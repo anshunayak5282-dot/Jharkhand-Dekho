@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="booking_succ.css">
+    <link rel="stylesheet" href="/jharkhand/frontend/booking_succ.css">
     <title>Jharkhand Dekho</title>
 </head>
 <body>
@@ -17,7 +17,7 @@ session_start();
             
         </div> 
         <h2>Booking Successful</h2>
-        <a href="index.php"><button>OK</button></a>
+        <a href="/jharkhand/frontend/index.php"><button>OK</button></a>
 
     </div>
     </div>

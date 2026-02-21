@@ -29,7 +29,7 @@ session_start();
             { ?>
               <!-- <li>Welcome <?php echo $_SESSION['user'];?></li>   all php new line -->
 
-            <a href="logout.php"><li>Logout</li></a>
+            <a href="/jharkhand/backend/logout.php"><li>Logout</li></a>
             <?php } else { ?>
                        <a href="login.html"><li>Log-in</li></a>
 

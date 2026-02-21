@@ -10,7 +10,7 @@ $sql = "INSERT INTO users (name, email, mobile, password)
         VALUES ('$name', '$email', '$mobile', '$password')";
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: login.html");
+    header("Location: /jharkhand/frontend/login.html");
     exit;
 } else {
     echo "Error: " . mysqli_error($conn);

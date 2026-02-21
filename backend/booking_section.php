@@ -17,7 +17,7 @@ $data = mysqli_fetch_assoc($q);
 <html>
 <head>
   <title>Booking</title>
-  <link rel="stylesheet" href="./booking.css">
+  <link rel="stylesheet" href="/jharkhand/frontend/booking.css">
 </head>
 <body>
 

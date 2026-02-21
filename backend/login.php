@@ -21,12 +21,12 @@ if(isset($_POST['mobile']) && isset($_POST['password'])){
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['user'] = $row['mobile'];
-        header("Location: index.php");
+        header("Location: /jharkhand/frontend/index.php");
         exit;
     } else {
         echo "<script>
                 alert('Invalid user');
-                window.location.href='login.html';
+                window.location.href='/jharkhand/frontend/login.html';
               </script>";
         exit;
     }

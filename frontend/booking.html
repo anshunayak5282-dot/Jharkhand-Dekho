@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,16 +21,12 @@ session_start();
             <a href=""><li>Search</li></a>
             <li>Blog</li>
             <a href="booking.html"><li>Booking</li></a>
-            <?php if(isset($_SESSION['user']))
-            { ?>
               <!-- <li>Welcome <?php echo $_SESSION['user'];?></li>   all php new line -->
 
-            <a href="logout.php"><li>Logout</li></a>
-            <?php } else { ?>
+            <!-- <a href="/jharkhand/backend/logout.php"><li>Logout</li></a> -->
                        <a href="login.html"><li>Log-in</li></a>
 
-            <!-- <a href="booking.html"><li>Booking</li></a> -->
-            <?php } ?>
+            
             
          </ul>
       </div>
