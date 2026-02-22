@@ -27,6 +27,7 @@ body{
 
 .container-1 form{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 400px;
     gap: 8px;
@@ -37,6 +38,7 @@ body{
 }
 .container-1{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -77,6 +79,7 @@ input:focus{
 }
 .first-content{
     display: flex;
+    flex-wrap: wrap;
     
     padding-top: 20px;
 }
@@ -97,6 +100,25 @@ input:focus{
 .container-2 h2{
     color: rgb(172, 49, 49);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 60px;
+}
+@media(max-width : 800px){
+    .container-2{
+        display: none;
+    }
+}
+@media(max-width : 480px){
+    .container-1{
+        height: auto;
+        width: 385px;
+    }
+    .container-1 form{
+        height: auto;
+        width: 370px;
+    }
+    .container-1 h2{
+        font-size: 15px;
+    }
 }

@@ -282,7 +282,7 @@ session_start();
                               <h2>Taj Hotel</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p> rs 8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -304,7 +304,7 @@ session_start();
                               <h2>CoutYard</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p> rs 8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -326,7 +326,7 @@ session_start();
                               <h2>Villege</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p> rs 8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
@@ -349,7 +349,7 @@ session_start();
                               <h2>Radisson Blue</h2>
                            </div>
                            <div class="para">
-                              <p>Fromr rs 8000</p>
+                              <p> rs 8000</p>
                               <div class="rating">
                               <li class="fa-solid fa-star"></li>
                               <li class="fa-solid fa-star"></li>
